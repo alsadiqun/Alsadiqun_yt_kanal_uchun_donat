@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlSadiqun</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header qismi -->
+    <header>
+        <h1>AlSadiqun</h1>
+        <p>Bizni qo‘llab-quvvatlash uchun donat qiling</p>
+        <div class="buttons">
+            <button class="btn donate-btn" onclick="window.location.href='https://payme.uz/'">
+                💰 Donat qilish <br><small id="card-number">6262 5700 0745 2453</small>
+            </button>
+            <button class="btn copy-btn" onclick="copyCard()">📋 Nusxa olish</button>
+            <a href="https://www.youtube.com/@AlSadiqun" class="btn youtube-btn">▶️ YouTube kanalimiz</a>
+        </div>
+    </header>
+
+    <!-- Asosiy menyu -->
+    <nav>
+        <ul>
+            <li><a href="#about">ℹ️ Biz haqimizda</a></li>
+            <li><a href="https://t.me/AlSadiqun_murojat_uchun_bot">📩 Biz bilan bog‘lanish</a></li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 AlSadiqun | Barcha huquqlar himoyalangan</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function copyCard() {
+            const cardNumber = document.getElementById("card-number").innerText;
+            navigator.clipboard.writeText(cardNumber).then(() => {
+                alert("Karta raqami nusxalandi: " + cardNumber);
+            });
+        }
+    </script>
+
+</body>
+</html>
